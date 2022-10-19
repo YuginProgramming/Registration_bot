@@ -1,0 +1,22 @@
+const recordOptionsUa = {
+    reply_markup: JSON.stringify({
+        inline_keyboard: [
+            [{text: 'Консультація', callback_data: 'consultation'},
+             {text: 'Діагностика', callback_data: 'diagnostics'},
+             {text: 'Інформація', callback_data: 'information'}],
+        ]
+    })
+}
+
+const questionsUa = {
+    reply_markup: JSON.stringify({
+        inline_keyboard: [
+            [{text: 'Так', callback_data: 'yes'},
+             {text: 'Ні', callback_data: 'no'},],
+        ]
+    })
+}
+
+const startRecord = async (chatId) => {
+    await bot.sendMessage(chatId, 'Напишите пожалуйста Ваше имя фамилию и отчество');
+}
