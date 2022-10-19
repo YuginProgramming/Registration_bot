@@ -1,5 +1,5 @@
 const TelegramApi = require('node-telegram-bot-api');
-const token = '5322783432:AAEyHVbJKxsQq8LiY4lSTOrq3RikIvnJ3qk';
+const token = '??????????';
 const bot = new TelegramApi(token, {polling: true});
 const axios = require('axios');
 CHAT_ID = "-785368621"; 
